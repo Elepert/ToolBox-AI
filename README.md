@@ -1,4 +1,4 @@
 # ToolBox-AI
-Al and Algorithms Project Toolbox starter code
+The screenshots and explanations can be found here:
+https://elepert.github.io/ToolBox-AI/Algorithms
 
-Full instructions at https://sd17spring.github.io/toolboxes/algorithms-and-ai/ 
