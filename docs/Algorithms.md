@@ -1,7 +1,5 @@
 # AI and Algorithms
 
-### What are the advantages that A star has over breadth-first search? What advantages does A star have over depth-first search?
-
 ### Take a look at lines 124-127 of the code. Try commenting and uncommenting lines and running python astar.py to see what values are printed in each cell. Take a screenshot of each example with some lava tiles placed down, and in your own words, explain what f_score, g_score, and h_score are, and why you see those specific values in the screenshot.
 
 g_score shows the number of the tile in terms of the path. For example a tile with the number 20 would be the 20th tile on the path chosen. The tiles that are not selected green shows the number it has along another longer path.
@@ -34,3 +32,8 @@ In this case, the swamp moves are the only option available so Paul has to take 
 <img src="https://raw.githubusercontent.com/Elepert/ToolBox-AI/master/images/swamp.png" alt="" width="300"/>
 
 ### Evolve Paul and allow him to jump over lava! Add the ability for Paul to jump one square. This should cost 8 movement points, however. This will involve changing get_open_adj_coords().
+
+In this case, skipping diagonally over the lava tile is the only option available. The instructions weren't too clear about whether the 8 points were plus the original cost of the move or simple the cost of the move no matter what direction. In my model, I made it so that it was 8 points plus the original. So in the example, it costs Paul 11 points to skip over a diagonal tile.
+*Below: Example of Paul skipping over lava*
+
+<img src="https://raw.githubusercontent.com/Elepert/ToolBox-AI/master/images/skipping.png" alt="" width="300"/>
